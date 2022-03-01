@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shorcut icon" href="static/images/favicon.ico" type="image/x-icon">
+    <title>Scabatah Store</title>
+    <link rel="stylesheet" href="static/templates/styles/home.css">
+</head>
+
+<body style="display:flex;margin:0px;">
+    <div class="view-port" style="height:100vh;width:100vw;margin:0px">
+
+        <div class="header" style="display:flex;height:30%;flex-direction:column;justify-content:center;">
+            <h1 style="color:blue;font-size:46px;text-align:center;margin:0px">Scabatah Store :: {{page_name}}
+            </h1>
+        </div>
+        <div class="content">
+            <p style="margin:0px">Bem vindo!</p>
+            {% for buttom in buttons %}
+            <button class="buttomclass" style="background-image: url('{{buttom['image_url']}}')">{{buttom["text"]}}</button>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

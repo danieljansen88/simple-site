@@ -1,2 +1,2 @@
 # simple-site
-Projeto Simples
+Projeto Simples demais
